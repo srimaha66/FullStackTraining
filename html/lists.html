@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering HTML Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        dt { font-weight: bold; color: #e67e22; margin-top: 10px; }
+        dd { margin-left: 20px; color: #555; }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Lists</h1>
+
+    <!-- 1. UNORDERED LIST SECTION -->
+    <section>
+        <h2>1. Unordered Lists (&lt;ul&gt;)</h2>
+        <p>Used for collections where items do not follow a strict chronological sequence.</p>
+        <ul>
+            <li>Shopping List</li>
+            <li>Grocery Shopping</li>
+            <li>To-Do Items</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li>Apples</li>
+            <li>Bananas</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Milk</li>
+            <li>Bread</li>
+        </ul>
+    </section>
+
+    <!-- 2. ORDERED LIST SECTION -->
+    <section>
+        <h2>2. Ordered Lists (&lt;ol&gt;)</h2>
+        <p>Used for sequential data, step-by-step guides, or ranked items.</p>
+        <ol>
+            <li>Create account</li>
+            <li>Verify Email</li>
+            <li>Log In</li>
+        </ol>
+        <ol type="I" start="5">
+            <li>Fifth Chapter Title</li>
+            <li>Sixth Chapter Title</li>
+            <li>Seventh Chapter Title</li>
+        </ol>
+        <ol type="a">
+            <li>Mix ingredients well.</li>
+            <li>Bake for 30 minutes.</li>
+            <li>Serve warm.</li>
+        </ol>
+    </section>
+
+    <!-- 3. NESTED LIST SECTION -->
+    <section>
+        <h2>3. Nested Hierarchical Lists</h2>
+        <p>Demonstrates embedding one list format directly inside another list item.</p>
+        
+        <ol>
+            <li>
+                Front-End Technologies
+                <ul>
+                    <li>HTML5 (Structure)</li>
+                    <li>CSS3 (Design)</li>
+                    <li>JavaScript (Interactivity)</li>
+                </ul>
+            </li>
+            <li>
+                Back-End Technologies
+                <ul>
+                    <li>Node.js</li>
+                    <li>Python Django</li>
+                    <li>PostgreSQL Databases</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- 4. DEFINITION / DESCRIPTION LIST SECTION -->
+    <section>
+        <h2>4. Definition Lists (&lt;dl&gt;)</h2>
+        <p>Perfect for dictionary definitions, glossaries, metadata, or key-value pairs.</p>
+        
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language handles standard structural layouts for website documents.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets control fonts, themes, spacing, colors, and overall responsiveness.</dd>
+            
+            <dt>URL</dt>
+            <dd>Uniform Resource Locator maps the specific global address used to target web resources.</dd>
+        </dl>
+    </section>
+
+</body>
+</html>
